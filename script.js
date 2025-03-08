@@ -103,7 +103,7 @@ var flameWorker = 0;
 function generateFlames(x) {
     var flame = document.createElement("img");
     flame.className = "flame";
-    flame.src = "../assets/flame.gif";
+    flame.src = "assets/flame.gif";
     flame.style.marginLeft = x + "px";
     document.getElementById("background").appendChild(flame);
 
@@ -128,7 +128,7 @@ function generateFlames(x) {
     }, 100);
 }
 
-var runSound = new Audio("../assets/run.mp3");
+var runSound = new Audio("assets/run.mp3");
 runSound.loop = true;
-var jumpSound = new Audio("../assets/jump.mp3");
-var deadSound = new Audio("../assets/dead.mp3");
+var jumpSound = new Audio("assets/jump.mp3");
+var deadSound = new Audio("assets/dead.mp3");
