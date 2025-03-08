@@ -29,7 +29,7 @@ function run() {
         if (runImage == 9) {
             runImage = 1;
         }
-        document.getElementById("boy").src = "../assets/run" + runImage + ".png";
+        document.getElementById("boy").src = "assets/run" + runImage + ".png";
     }, 150);
 }
 
@@ -54,7 +54,7 @@ function jump() {
             runSound.play();
             jumpWorker = 0;
         }
-        document.getElementById("boy").src = "../assets/jump" + jumpImage + ".png";
+        document.getElementById("boy").src = "assets/jump" + jumpImage + ".png";
     }, 150);
 }
 
@@ -93,7 +93,7 @@ function dead() {
             alert("Game Over!\nClick OK to Restart Game!");
             window.location.reload();
         }
-        document.getElementById("boy").src = "../assets/dead" + deadImage + ".png";
+        document.getElementById("boy").src = "assets/dead" + deadImage + ".png";
     }, 150);
 }
 
