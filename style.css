@@ -1,0 +1,39 @@
+.background {
+    background-image: url(assets/background.png);
+    background-size: 100%;
+    font-family: 'Quicksand';
+    overflow: hidden;
+}
+
+.score {
+    color: red;
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.boy {
+    position: absolute;
+    height: 250px;
+    margin-top: 540px;
+}
+
+.pop-up {
+    font-size: 75px;
+    font-weight: bold;
+    color: black;
+    background-color: transparent;
+    margin-top: 300px;
+    margin-left: 400px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+.flame {
+    position: absolute;
+    height: 150px;
+    margin-top: 650px;
+    margin-left: 500px;
+}
