@@ -29,7 +29,7 @@ function run() {
         if (runImage == 9) {
             runImage = 1;
         }
-        document.getElementById("boy").src = "assets/run" + runImage + ".png";
+        document.getElementById("boy").src = "../assets/run" + runImage + ".png";
     }, 150);
 }
 
@@ -54,7 +54,7 @@ function jump() {
             runSound.play();
             jumpWorker = 0;
         }
-        document.getElementById("boy").src = "assets/jump" + jumpImage + ".png";
+        document.getElementById("boy").src = "../assets/jump" + jumpImage + ".png";
     }, 150);
 }
 
@@ -93,7 +93,7 @@ function dead() {
             alert("Game Over!\nClick OK to Restart Game!");
             window.location.reload();
         }
-        document.getElementById("boy").src = "assets/dead" + deadImage + ".png";
+        document.getElementById("boy").src = "../assets/dead" + deadImage + ".png";
     }, 150);
 }
 
@@ -103,7 +103,7 @@ var flameWorker = 0;
 function generateFlames(x) {
     var flame = document.createElement("img");
     flame.className = "flame";
-    flame.src = "assets/flame.gif";
+    flame.src = "../assets/flame.gif";
     flame.style.marginLeft = x + "px";
     document.getElementById("background").appendChild(flame);
 
@@ -128,7 +128,7 @@ function generateFlames(x) {
     }, 100);
 }
 
-var runSound = new Audio("assets/run.mp3");
+var runSound = new Audio("../assets/run.mp3");
 runSound.loop = true;
-var jumpSound = new Audio("assets/jump.mp3");
-var deadSound = new Audio("assets/dead.mp3");
+var jumpSound = new Audio("../assets/jump.mp3");
+var deadSound = new Audio("../assets/dead.mp3");
